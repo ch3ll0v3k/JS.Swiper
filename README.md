@@ -1,4 +1,4 @@
-# JS.Swiper IS: Pure JS, Browser swipe detector. (Fill free to test on your device and commit) 
+#### JS.Swiper IS: Pure JS, Browser swipe detector. (Fill free to test on your device and commit) 
 
 #### Testet on: Samsung S3 Android 4.4 KitKat
 * KitKat (Default "Browser")
