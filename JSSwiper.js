@@ -1,9 +1,9 @@
 // --------------------------------------------------------------------
-// TSwiper v1.0.0
+// JSSwiper v1.0.0
 
 var once = true;
 
-var TSwiper = function( objParams ){
+var JSSwiper = function( objParams ){
 
     document.swiper = {
         start_X: 0, start_Y: 0, end_X: 0, end_Y: 0,
@@ -33,11 +33,15 @@ var TSwiper = function( objParams ){
 
             }
 
+            // NOTE:
+            // Vertical detection is disabled
+
         }
 
     }
 
     // --------------------------------------------------------
+    // Touch devices
     document.addEventListener('touchstart', function(e) {
 
         // e.preventDefault();
@@ -61,6 +65,7 @@ var TSwiper = function( objParams ){
     }, false); 
 
     // --------------------------------------------------------
+    // PC W/TouchScreen
     document.addEventListener('mousedown', function(e) {
         if( typeof e.screenX !== "undefined" ){
             document.swiper.start_X = e.screenX;

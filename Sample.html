@@ -2,24 +2,25 @@
 <html lang="en-US">
 <head>
 
-    <title>TSwiper </title>
+    <title> JSSwiper </title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/js/JSSwiper"></script>
 
 
     <script type="text/javascript">
 
-        var mTSwiper = {};
+        var mJSSwiper = {};
 
         window.addEventListener('load', function () { 
 
-            mTSwiper = new TSwiper({
+            mJSSwiper = new JSSwiper({
                 onSwipeLeft  :  function(){
                     console.info( 'onSwipeLeft: call' );
+                    slideMenuClose();
                 },
                 onSwipeRight :  function(){
+                    slideMenuOpen();
                     console.info( 'onSwipeRight: call' );
                 },
                 onSwipeUp    :  function(){
