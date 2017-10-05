@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <title>TSwiper </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    <script type="text/javascript">
+
+        var mTSwiper = {};
+
+        window.addEventListener('load', function () { 
+
+            mTSwiper = new TSwiper({
+                onSwipeLeft  :  function(){
+                    console.info( 'onSwipeLeft: call' );
+                },
+                onSwipeRight :  function(){
+                    console.info( 'onSwipeRight: call' );
+                },
+                onSwipeUp    :  function(){
+                    console.info( 'onSwipeUp: call' );
+                },
+                onSwipeDown  :  function(){
+                    console.info( 'onSwipeDown: call' );
+                },
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>
